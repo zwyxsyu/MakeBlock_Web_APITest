@@ -1,0 +1,115 @@
+[[90mmochawesome[39m] Generating report files...
+
+
+[0m[0m
+[0m  request(url)[0m
+[2K[0G  [32m  √[0m[90m should be supported[0m[31m (139ms)[0m
+[0m    .end(cb)[0m
+[2K[0G    [32m  √[0m[90m should set `this` to the test object when calling cb[0m
+
+[0m  request(app)[0m
+[2K[0G  [32m  √[0m[90m should fire up the app on an ephemeral port[0m
+[2K[0G  [32m  √[0m[90m should work with an active server[0m
+[2K[0G  [32m  √[0m[90m should work with remote server[0m
+[2K[0G  [31m  1) should work with a https server[0m
+[2K[0G  [32m  √[0m[90m should work with .send() etc[0m[33m (62ms)[0m
+[2K[0G  [32m  √[0m[90m should work when unbuffered[0m
+[2K[0G  [32m  √[0m[90m should default redirects to 0[0m
+[2K[0G  [32m  √[0m[90m should handle redirects[0m
+[2K[0G  [32m  √[0m[90m should handle socket errors[0m
+[0m    .end(fn)[0m
+[2K[0G    [32m  √[0m[90m should close server[0m
+[2K[0G    [32m  √[0m[90m should wait for server to close before invoking fn[0m
+[2K[0G    [32m  √[0m[90m should support nested requests[0m
+[2K[0G    [32m  √[0m[90m should include the response in the error callback[0m
+[2K[0G    [32m  √[0m[90m should set `this` to the test object when calling the error callback[0m
+[2K[0G    [32m  √[0m[90m should handle an undefined Response[0m
+[2K[0G    [32m  √[0m[90m should handle error returned when server goes down[0m[31m (1016ms)[0m
+[0m    .expect(status[, fn])[0m
+[2K[0G    [32m  √[0m[90m should assert the response status[0m
+[0m    .expect(status)[0m
+[2K[0G    [32m  √[0m[90m should assert only status[0m
+[0m    .expect(status, body[, fn])[0m
+[2K[0G    [32m  √[0m[90m should assert the response body and status[0m
+[0m      when the body argument is an empty string[0m
+[2K[0G      [32m  √[0m[90m should not quietly pass on failure[0m
+[0m    .expect(body[, fn])[0m
+[2K[0G    [32m  √[0m[90m should assert the response body[0m
+[2K[0G    [32m  √[0m[90m should assert the status before the body[0m
+[2K[0G    [32m  √[0m[90m should assert the response text[0m
+[2K[0G    [32m  √[0m[90m should assert the parsed response body[0m
+[2K[0G    [32m  √[0m[90m should support regular expressions[0m
+[2K[0G    [32m  √[0m[90m should assert response body multiple times[0m
+[2K[0G    [32m  √[0m[90m should assert response body multiple times with no exception[0m
+[0m    .expect(field, value[, fn])[0m
+[2K[0G    [32m  √[0m[90m should assert the header field presence[0m
+[2K[0G    [32m  √[0m[90m should assert the header field value[0m
+[2K[0G    [32m  √[0m[90m should assert multiple fields[0m
+[2K[0G    [32m  √[0m[90m should support regular expressions[0m
+[2K[0G    [32m  √[0m[90m should support numbers[0m
+[0m      handling arbitrary expect functions[0m
+[2K[0G      [32m  √[0m[90m reports errors[0m
+[2K[0G      [32m  √[0m[90m ensures truthy non-errors returned from asserts are not promoted to errors[0m
+[2K[0G      [32m  √[0m[90m ensures truthy errors returned from asserts are throw to end[0m
+[2K[0G      [32m  √[0m[90m doesn't create false negatives[0m
+[2K[0G      [32m  √[0m[90m handles multiple asserts[0m
+[2K[0G      [32m  √[0m[90m plays well with normal assertions - no false positives[0m
+[2K[0G      [32m  √[0m[90m plays well with normal assertions - no false negatives[0m
+[0m      handling multiple assertions per field[0m
+[2K[0G      [32m  √[0m[90m should work[0m
+[2K[0G      [32m  √[0m[90m should return an error if the first one fails[0m
+[2K[0G      [32m  √[0m[90m should return an error if a middle one fails[0m
+[2K[0G      [32m  √[0m[90m should return an error if the last one fails[0m
+
+[0m  request.agent(app)[0m
+[2K[0G  [32m  √[0m[90m should save cookies[0m
+[2K[0G  [32m  √[0m[90m should send cookies[0m
+
+[0m  .<http verb> works as expected[0m
+[2K[0G  [32m  √[0m[90m .delete should work[0m
+[2K[0G  [32m  √[0m[90m .del should work[0m
+[2K[0G  [32m  √[0m[90m .get should work[0m
+[2K[0G  [32m  √[0m[90m .post should work[0m
+[2K[0G  [32m  √[0m[90m .put should work[0m
+
+[0m  assert ordering by call order[0m
+[2K[0G  [32m  √[0m[90m should assert the body before status[0m
+[2K[0G  [32m  √[0m[90m should assert the status before body[0m
+[2K[0G  [32m  √[0m[90m should assert the fields before body and status[0m
+[2K[0G  [32m  √[0m[90m should call the expect function in order[0m
+[2K[0G  [32m  √[0m[90m should call expect(fn) and expect(status, fn) in order[0m
+[2K[0G  [32m  √[0m[90m should call expect(fn) and expect(header,value) in order[0m
+[2K[0G  [32m  √[0m[90m should call expect(fn) and expect(body) in order[0m
+
+[0m  request.get(url).query(vals) works as expected[0m
+[2K[0G  [32m  √[0m[90m normal single query string value works[0m
+[2K[0G  [32m  √[0m[90m array query string value works[0m
+[2K[0G  [32m  √[0m[90m array query string value work even with single value[0m
+[2K[0G  [32m  √[0m[90m object query string value works[0m
+
+
+[92m [0m[32m 62 passing[0m[90m (2s)[0m
+[31m  1 failing[0m
+
+[0m  1) request(app) should work with a https server:
+[0m[31m     Error: ENOENT: no such file or directory, open 'E:\gogsrepo\MakeBlock_Web_APITest\test\module\fixtures\test_key.pem'[0m[90m
+    at Error (native)
+    at Object.fs.openSync (fs.js:549:18)
+    at Object.fs.readFileSync (fs.js:397:15)
+    at Context.<anonymous> (E:\gogsrepo\MakeBlock_Web_APITest\test\module\supertest.js:108:15)
+    at callFnAsync (E:\gogsrepo\MakeBlock_Web_APITest\node_modules\mocha\lib\runnable.js:349:8)
+    at Test.Runnable.run (E:\gogsrepo\MakeBlock_Web_APITest\node_modules\mocha\lib\runnable.js:301:7)
+    at Runner.runTest (E:\gogsrepo\MakeBlock_Web_APITest\node_modules\mocha\lib\runner.js:422:10)
+    at E:\gogsrepo\MakeBlock_Web_APITest\node_modules\mocha\lib\runner.js:528:12
+    at next (E:\gogsrepo\MakeBlock_Web_APITest\node_modules\mocha\lib\runner.js:342:14)
+    at E:\gogsrepo\MakeBlock_Web_APITest\node_modules\mocha\lib\runner.js:352:7
+    at next (E:\gogsrepo\MakeBlock_Web_APITest\node_modules\mocha\lib\runner.js:284:14)
+    at Immediate._onImmediate (E:\gogsrepo\MakeBlock_Web_APITest\node_modules\mocha\lib\runner.js:320:5)
+  
+[0m
+
+
+
+[[90mmochawesome[39m] Report saved to mochawesome-reports\mochawesome.html
+
+
